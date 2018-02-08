@@ -1,0 +1,17 @@
+{
+  "name": "nodejs-mongodb-api",
+  "version": "1.0.0",
+  "description": "Api that serves as example of how to upload files in NodeJS",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "1.18.2",
+    "express": "4.16.2",
+    "express-fileupload": "0.4.0"
+  }
+}
