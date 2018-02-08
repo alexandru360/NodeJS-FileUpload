@@ -13,7 +13,8 @@ router.post('/', function (req, res) {
   // The name of the input field (i.e. "sampleFile") is used to retrieve the uploaded file
   let sampleFile = req.files.sampleFile;
 
-  fs.writeFile('/home/alex/test.png', sampleFile.data, function (err) {
+  //Replace this with the name of the file you want to uplad !
+  fs.writeFile('/upload/test-upload.text', sampleFile.data, function (err) {
     if (err) throw err;
     console.log('Works ?!');
     res.status(200).send('ok');
