@@ -6,10 +6,12 @@ var app = express();
 const fileUpload = require('express-fileupload');
 app.use(fileUpload());
 
-var FileController = require('./file-upload/file-upload');
+var FileController = require('./src/file-upload');
 app.use('/upload', FileController);
 
-app.listen(3000);
-console.log("Api on port 3000");
-
+var port = process.env.PORT || 3000;
+app.listen(port, function() {
+    console.log('Express server listening on port ' + port);
+  });
+  
 module.exports = app;
